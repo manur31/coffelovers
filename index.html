@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Coffee Lovers</title>
 </head>
 <body>
     <header>
-        <h1>CoffeeLovers</h1>
-        <nav class="header-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <button>Get the App</button>
-        <div class="menu-mobile">
+        <h1 class="logo">
+            <a href="#home">
+                CoffeeLovers
+            </a>
+        </h1>
+        <div class="menu-container">
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cta-btn">Get the App</button>
+        </div>
+        <div class="menu-burger">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </div>
     </header>
@@ -27,9 +34,9 @@
             <article class="home-info">
                 <h1>Find the best coffee shops around you</h1>
                 <p>CoffeeLovers helps you discover amazing coffee spots nearby. From cozy local cafés to specialty coffee bars.</p>
-                <section class="cta-btn">
-                    <button>Get the App</button>
-                    <button>Explore Cafés</button>
+                <section class="cta-btn-container">
+                    <button class="cta-btn">Get the App</button>
+                    <button class="cta-btn secondary">Explore Cafés</button>
                 </section>
             </article>
             <article class="home-image">
@@ -42,7 +49,7 @@
             <h2>Why CoffeeLovers?</h2>
             <section class="cards-container">
                 <article class="feature-card">
-                    <div class="img-container">
+                    <div class="icon-container">
                         <!-- search icon -->
                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                     </div>
@@ -54,7 +61,7 @@
                     </p>
                 </article>
                 <article class="feature-card">
-                    <div class="img-container">
+                    <div class="icon-container">
                         <!-- star icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
@@ -66,7 +73,7 @@
                     </p>
                 </article>
                 <article class="feature-card">
-                    <div class="img-container">
+                    <div class="icon-container">
                         <!-- map icon -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
@@ -118,13 +125,24 @@
          <section id="gallery">
             <h2>Coffee Moments</h2>
             <div class="gallery-grid">
-                <!-- Gallery items will go here -->
-                <img src="imgs/img1.jpg" alt="Coffee beans">
-                <img src="imgs/img2.jpg" alt="Refilling Coffee Machine">
-                <img src="imgs/img3.jpg" alt="Coffee cup on table">
-                <img src="imgs/img4.jpg" alt="Coffee shop exterior">
-                <img src="imgs/img5.jpg" alt="Barista making coffee">
-                <img src="imgs/img6.jpg" alt="Coffee shop interior">
+                <div class="grid-image item-1">
+                    <img src="imgs/img1.jpg" alt="Coffee beans">
+                </div>
+                <div class="grid-image item-2">
+                    <img src="imgs/img2.jpg" alt="Refilling Coffee Machine">
+                </div>
+                <div class="grid-image item-3">
+                    <img src="imgs/img3.jpg" alt="Coffee cup on table">
+                </div>
+                <div class="grid-image item-4">
+                    <img src="imgs/img4.jpg" alt="Coffee shop exterior">
+                </div>
+                <div class="grid-image item-5">
+                    <img src="imgs/img5.jpg" alt="Barista making coffee">
+                </div>
+                <div class="grid-image item-6">
+                    <img src="imgs/img6.jpg" alt="Coffee shop interior">
+                </div>
             </div>
          </section>
 
@@ -147,24 +165,28 @@
          <section id="cta">
             <h2>Start exploring coffee today</h2>
             <p>Join thousands of coffee lovers discovering new cafés every day.</p>
-            <button>Download the App</button>
+            <button class="cta-btn">Download the App</button>
          </section>
     </main>
     <footer>
-        <nav class="footer-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <section class="footer-info">
-            <h1>CoffeeLovers</h1>
-            <p>Discover the best coffee spots around you.</p>
-            <p>&copy; 2026 CoffeeLovers. All rights reserved.</p>
-        </section>
-        <button>Get the App</button>
+        <div class="footer-container">
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#cta">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="footer-info">
+                <h1>
+                    <a href="#home">CoffeeLovers</a>
+                </h1>
+                <p>Discover the best coffee spots around you.</p>
+                <p>&copy; 2026 CoffeeLovers. All rights reserved.</p>
+            </section>
+            <button class="cta-btn-footer">Get the App</button>
+        </div>
     </footer>
 </body>
 </html>
